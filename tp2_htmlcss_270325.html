@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <link rel="stylesheet" href="./css/tp2_htmlcss_270325.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo"><img src="./img/logo.png" alt="logo du site" class="header__image">
+            </div>
+            <h1 class="header__title">Digital Horizon</h1>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#home">Accueil</a></li>
+                <li class="header__menu-item"><a href="#equipe">Équipe</a></li>
+                <li class="header__menu-item"><a href="#services">Services</a></li>
+                <li class="header__menu-item"><a href="#prix">Prix</a></li>
+                <li class="header__menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero__content">
+                <h2 class="hero__title">Votre Succès, Notre Passion</h2>
+                <p class="hero__description">Solutions professionnelles sur mesure pour votre entreprise</p>
+                <button popovertarget="info-modal" class="hero__cta">En Savoir Plus</button>
+            </div>
+        </section>
+
+        <!-- Modale d'Information -->
+        <div id="info-modal" popover class="modal">
+            <div class="modal__header">
+                <h3 class="modal__title">Informations</h3>
+                <button popovertarget="info-modal" popovertarget-action="hide" type="button"
+                    class="modal__close">×</button>
+            </div>
+            <div class="modal__content">
+                <p>Nous sommes une entreprise dédiée à vous offrir les meilleures solutions professionnelles. Notre
+                    objectif est
+                    de comprendre vos besoins uniques et de vous accompagner dans votre réussite.</p>
+                <p>Nous croyons en la collaboration, l'innovation et l'excellence.</p>
+            </div>
+        </div>
+
+        <section id="equipe" class="team">
+            <h2 class="team__title">Notre Équipe</h2>
+            <div class="team__members">
+                <div class="team__member">
+                    <img src="./img/member1.jpg" alt="Sandra Tomas" class="team__member-image">
+                    <h3 class="team__member-name">Sandra Tomas</h3>
+                    <p class="team__member-role">Directrice</p>
+                </div>
+                <div class="team__member">
+                    <img src="./img/member2.jpg" alt="Marie Martin" class=" team__member-image">
+                    <h3 class="team__member-name">Marie Martin</h3>
+                    <p class="team__member-role">Responsable Marketing</p>
+                </div>
+                <div class="team__member">
+                    <img src="./img/member3.jpg" alt="Pierre Leroy" class="team__member-image">
+                    <h3 class="team__member-name">Pierre Leroy</h3>
+                    <p class="team__member-role">Consultant Senior</p>
+                </div>
+                <div class="team__member">
+                    <img src="./img/member4.jpg" alt="Fabrice Dupont" class="team__member-image">
+                    <h3 class="team__member-name">Fabrice Dupont</h3>
+                    <p class="team__member-role">Développeur Web</p>
+                </div>
+                <div class="team__member">
+                    <img src="./img/member5.avif" alt="Fred Lefevre" class="team__member-image">
+                    <h3 class="team__member-name">Fred Lefevre</h3>
+                    <p class="team__member-role">Designer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- À ajouter dans votre HTML, juste après la section pricing -->
+        <section id="services" class="services">
+            <h2 class="services__title">Nos Services</h2>
+            <div class="services__grid">
+                <div class="services__card services__card--design">
+                    <div class="services__card-icon">🎨</div>
+                    <h3 class="services__card-title">Design Créatif</h3>
+                    <p class="services__card-description">Solutions de design innovantes et sur mesure</p>
+                </div>
+                <div class="services__card services__card--strategy">
+                    <div class="services__card-icon">📊</div>
+                    <h3 class="services__card-title">Stratégie Digitale</h3>
+                    <p class="services__card-description">Développement de stratégies digitales performantes</p>
+                </div>
+                <div class="services__card services__card--consulting">
+                    <div class="services__card-icon">💡</div>
+                    <h3 class="services__card-title">Conseil Expert</h3>
+                    <p class="services__card-description">Accompagnement personnalisé pour votre croissance</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="prix" class="pricing">
+            <h2 class="pricing__title">Nos Forfaits</h2>
+            <div class="pricing__plans">
+                <div class="pricing__plan">
+                    <div class="pricing__plan-tag">Standard</div>
+                    <div class="pricing__plan-content">
+                        <h3 class="pricing__plan-title">Starter</h3>
+                        <p class="pricing__plan-price">99€/mois</p>
+                        <ul class="pricing__plan-features">
+                            <li>Conseil de base</li>
+                            <li>Support par email</li>
+                            <li>Rapport mensuel</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="pricing__plan-cta">Choisir</a>
+                </div>
+                <div class="pricing__plan pricing__plan--pro">
+                    <div class="pricing__plan-tag">Recommandé</div>
+                    <div class="pricing__plan-content">
+                        <h3 class="pricing__plan-title">Pro</h3>
+                        <p class="pricing__plan-price">249€/mois</p>
+                        <ul class="pricing__plan-features">
+                            <li>Stratégie complète</li>
+                            <li>Support prioritaire</li>
+                            <li>Analyse détaillée</li>
+                            <li>Réunions mensuelles</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="pricing__plan-cta">Choisir</a>
+                </div>
+                <div class="pricing__plan">
+                    <span class="pricing__plan-tag pricing--plan-tag--entreprise">Sur mesure</span>
+                    <div class="pricing__plan-content">
+                        <h3 class="pricing__plan-title">Entreprise</h3>
+                        <p class="pricing__plan-price">Sur devis</p>
+                        <ul class="pricing__plan-features">
+                            <li>Solution personnalisée</li>
+                            <li>Accompagnement total</li>
+                            <li>Consultant dédié</li>
+                            <li>Rapports personnalisés</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="pricing__plan-cta">Contacter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__contact">
+                <h3 class="footer__title">Contactez-nous</h3>
+                <p><i class="fas fa-envelope"></i> contact@agence.fr</p>
+                <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+            </div>
+            <div class="footer__links">
+                <h3 class="footer__title">Liens Rapides</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="#equipe"><i class="fas fa-users"></i> Équipe</a></li>
+                    <li><a href="#prix"><i class="fas fa-tag"></i> Tarifs</a></li>
+                    <li><a href="#"><i class="fas fa-file-alt"></i> Mentions légales</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <h3 class="footer__title">Suivez-nous</h3>
+                <div class="footer__social-icons">
+                    <a href="#" class="footer__social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="footer__social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer__social-icon"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            © 2024 Votre Agence Professionnelle. Tous droits réservés.
+        </div>
+    </footer>
+</body>

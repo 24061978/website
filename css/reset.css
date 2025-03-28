@@ -1,0 +1,65 @@
+/*-------------------------------------------
+Reset : remise à zéro des styles par défaut
+--------------------------------------------*/
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 16px * 62.5 / 100 = 10px = 1rem */
+}
+
+body {
+    font-size: 1.6rem;
+    /* 16 px */
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2.2rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+/* Images responsives */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
